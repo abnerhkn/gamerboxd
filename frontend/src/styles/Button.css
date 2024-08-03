@@ -1,0 +1,26 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.primary{
+  width: 240px;
+  height: 40px;
+  background-color: #267192;
+  border: none;
+  color: #ffff;
+  border-radius: 40px;
+  font-size: 14px;
+}
+
+.primary:hover{
+  background-color: #164255;
+  cursor: pointer;
+}
+
+.header-button{
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  border: none;
+  color: #ffff;
+}

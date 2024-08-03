@@ -1,0 +1,30 @@
+
+.custom-searchbar {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #search-bar {
+    border: none;
+    outline: none;
+    background-color: #b9b9b9 transparent;
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 10px 10px 10px 40px; 
+    width: 311px;
+    height: 38px;
+  }
+  
+  #search-bar::placeholder {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #ffff;
+  }
+  
