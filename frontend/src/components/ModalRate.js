@@ -1,10 +1,9 @@
 import React from 'react';
 import Modal from 'react-modal';
 
-
 Modal.setAppElement('#root');
 
-const ModalRate = ({ isOpen, onRequestClose, children }) => {
+const ModalRate = ({ isOpen = false, onRequestClose = () => {}, children }) => {
   return (
     <Modal
       isOpen={isOpen}

@@ -8,8 +8,8 @@ const Input = ({
   onChange,
   type,
   placeholder,
-  size,
-  className,
+  size = "medium",
+  className = "",
 }) => {
   const sizeClass = size ? `input-${size}` : "";
   return (
@@ -28,16 +28,13 @@ const Input = ({
 };
 
 Input.propTypes = {
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  type: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
+  type: PropTypes.string,
+  placeholder: PropTypes.string,
+  label: PropTypes.string,
   size: PropTypes.oneOf(["small", "medium", "large"]),
+  className: PropTypes.string,
 };
 
-Input.defaultProps = {
-  className: "",
-  size: "medium",
-};
 export default Input;

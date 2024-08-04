@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import bg from "../assets/bg.jpg";
 
-const CardComponent = ({ onClick, withHover }) => {
+const CardComponent = ({ onClick = () => {}, withHover = false }) => {
   return (
     <div>
       <Card

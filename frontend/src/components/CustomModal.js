@@ -21,7 +21,7 @@ const customStyles = {
 
 Modal.setAppElement('#root');
 
-const CustomModal = ({ isOpen, onRequestClose, children }) => {
+const CustomModal = ({ isOpen = false, onRequestClose = () => {}, children }) => {
   return (
     <Modal
       isOpen={isOpen}

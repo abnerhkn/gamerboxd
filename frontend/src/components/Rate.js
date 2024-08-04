@@ -3,7 +3,7 @@ import { FaStar, FaHeart } from "react-icons/fa";
 import "../styles/Rating.css";
 import Button from "./Button";
 import bg from "../assets/bg.jpg";
-import Card from "./CardComponent";
+import CardComponent from "./CardComponent";
 import Input from "./Input";
 
 const Rate = () => {
@@ -33,7 +33,6 @@ const Rate = () => {
       (selectedYear === currentYear && selectedDay > currentDay)
     ) {
       // Invalid date
-      // You can display an error message or handle it in any other way
       console.log("Invalid date");
     } else {
       setReviewDate(e.target.value);
@@ -48,10 +47,10 @@ const Rate = () => {
   return (
     <div className="container-review">
       <div className="view-game">
-          <p>Dead by Daylight</p>
-        <Card>
+        <p>Dead by Daylight</p>
+        <CardComponent>
           <img src={bg} alt="game" />
-        </Card>
+        </CardComponent>
       </div>
       <div className="rating">
         <h2>Classifique este jogo</h2>
@@ -68,6 +67,8 @@ const Rate = () => {
               size={"large"}
               value={reviewDate}
               onChange={handleReviewDateChange}
+              label=""
+              placeholder=""
             />
           </div>
           <div className="rating-content">

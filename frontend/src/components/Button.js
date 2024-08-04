@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/Button.css';
 
-const Button = ({ onClick, label, className, size}) => {
+const Button = ({ onClick = () => {}, label, className = '', size = 'medium' }) => {
   const sizeClass = size ? `button-${size}` : '';
   return (
     <button className={`${className} ${sizeClass}`} onClick={onClick}>
@@ -12,14 +12,10 @@ const Button = ({ onClick, label, className, size}) => {
 };
 
 Button.propTypes = {
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   label: PropTypes.string.isRequired,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-};
-
-Button.defaultProps = {
-  className: '',
-  size: 'medium', 
+  className: PropTypes.string,
 };
 
 export default Button;

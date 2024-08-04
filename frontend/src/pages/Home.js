@@ -3,7 +3,7 @@ import SearchBar from "../components/SearchBar";
 import logo from "../assets/logo.svg";
 import "../styles/Home.css";
 import Button from "../components/Button";
-import Modal from "../components/CustomModal";
+import CustomModal from "../components/CustomModal";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Popular from "./sections/Popular";
@@ -27,6 +27,7 @@ const Home = () => {
   const closeRegisterModal = () => {
     setIsRegisterOpen(false);
   };
+
   return (
     <div>
       <div className="header">
@@ -36,26 +37,26 @@ const Home = () => {
           <Button
             className={"header-button"}
             onClick={openLoginModal}
-            label="ENTRAR"
+            label={"ENTRAR"}
           />
           <Button
             className={"header-button"}
             onClick={openRegisterModal}
-            label="CADASTRAR"
+            label={"CADASTRAR"}
           />
-          <Button className={"header-button"} label="JOGOS" />
-          <Button className={"header-button"} label="LISTAS" />
+          <Button className={"header-button"} label={"JOGOS"} />
+          <Button className={"header-button"} label={"LISTAS"} />
         </div>
         <div className="container-home">
             <Popular />
         </div>
       </div>
-      <Modal isOpen={isLoginOpen} onRequestClose={closeLoginModal}>
+      <CustomModal isOpen={isLoginOpen} onRequestClose={closeLoginModal}>
         <Login />
-      </Modal>
-      <Modal isOpen={isRegisterOpen} onRequestClose={closeRegisterModal}>
+      </CustomModal>
+      <CustomModal isOpen={isRegisterOpen} onRequestClose={closeRegisterModal}>
         <Register />
-      </Modal>
+      </CustomModal>
     </div>
   );
 };

@@ -8,8 +8,8 @@ const Login = () => {
     <div className="container">
       <div className="container-content">
         <h2>Login</h2>
-        <Input type={"text"} placeholder={"Usuário"} />
-        <Input type={"password"} placeholder={"Digite sua senha"} />
+        <Input type={"text"} placeholder={"Usuário"} label="" size="large" />
+        <Input type={"password"} placeholder={"Digite sua senha"} label="" size="large"/>
         <a href="/resetar-senha">Esqueci minha senha</a>
         <Button className={"primary"} label={"Entrar"} />
         <a href="/registrar">Clique aqui</a>
