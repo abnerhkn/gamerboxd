@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: url("../assets/bg.jfif  ");
+  background: url("../assets/bg.jfif");
   background-size: cover;
   overflow-x: hidden;
 }
@@ -19,7 +19,8 @@ body {
   padding: 20px;
   background: linear-gradient(360deg, rgba(254, 12, 12, 0), rgb(16, 16, 16));
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 32px;
   width: 100%;
 }
 

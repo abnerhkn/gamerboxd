@@ -31,7 +31,7 @@ const Home = () => {
     <div>
       <div className="header">
         <div className="header-content">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" style={{ width: "170px", height: "50px" }} />
           <SearchBar placeholder={"Jogos, membros, desenvolvedores..."} />
           <Button
             className={"header-button"}
