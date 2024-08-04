@@ -47,7 +47,6 @@ const Home = () => {
           <Button className={"header-button"} label="LISTAS" />
         </div>
         <div className="container-home">
-
             <Popular />
         </div>
       </div>

@@ -24,3 +24,15 @@
   border: none;
   color: #ffff;
 }
+
+.button-small {
+  width: 100px;
+}
+
+.button-medium {
+  width: 150px;
+}
+
+.button-large {
+  width: 200px;
+}

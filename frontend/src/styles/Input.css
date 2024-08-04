@@ -13,3 +13,16 @@ input{
 input::placeholder{
     color: #ffffff;
 }
+
+.input-small {
+    width: 100px;
+  }
+  
+  .input-medium {
+    width: 150px;
+  }
+  
+  .input-large {
+    width: 200px;
+  }
+  

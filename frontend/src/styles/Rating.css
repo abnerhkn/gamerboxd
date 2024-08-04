@@ -1,8 +1,69 @@
-input[type=radio]{
+.container-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+
+.star {
+  cursor: pointer;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.rating textarea {
+  width: 600px;
+  height: 300px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #e9ebf84d;
+  border-radius: 5px;
+  resize: none;
+  color: #ffff;
+}
+
+textarea::placeholder {
+  color: #ffffff;
+}
+
+.like {
+  cursor: pointer;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.review-date Input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-date input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
 }
 
-.star{
-    cursor: pointer;
-    
+.view-game{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
